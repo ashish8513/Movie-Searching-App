@@ -1,0 +1,70 @@
+/* Movie card container */
+.movie-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 220px;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Poster image styling */
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 4px solid #4F46E5; /* Border color */
+}
+
+/* Movie information container */
+.movie-info {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+/* Title styling */
+.movie-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Year styling */
+.movie-year {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hover effect */
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+  .movie-card {
+    width: 180px;
+  }
+
+  .movie-poster {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-card {
+    width: 150px;
+  }
+
+  .movie-poster {
+    height: 200px;
+  }
+}

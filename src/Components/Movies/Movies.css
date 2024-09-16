@@ -1,0 +1,124 @@
+/* Container for the movies */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  /* Movie card styling */
+  .movie-card {
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards ease-in;
+  }
+  
+  /* Hover effect */
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Loading spinner */
+  .loading-spinner {
+    font-size: 1.5rem;
+    color: #4F46E5;
+    margin-top: 100px;
+  }
+  
+  /* State info styling */
+  .state-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  /* Container for movies and navigation buttons */
+.movie-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Loading spinner styling */
+.loading-spinner {
+  font-size: 1.5rem;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+/* Movie list styling */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Navigation buttons container */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+/* Navigation buttons styling */
+.nav-button {
+  background-color: #1976d2; /* Material-UI primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.nav-button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+.nav-button:disabled {
+  background-color: #c5cae9;
+  cursor: not-allowed;
+  transform: none;
+}
+
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Delay the animation based on the index of the card */
+  .animation-delay-0 {
+    animation-delay: 0s;
+  }
+  .animation-delay-1 {
+    animation-delay: 0.1s;
+  }
+  .animation-delay-2 {
+    animation-delay: 0.2s;
+  }
+  .animation-delay-3 {
+    animation-delay: 0.3s;
+  }
+  .animation-delay-4 {
+    animation-delay: 0.4s;
+  }
+  
