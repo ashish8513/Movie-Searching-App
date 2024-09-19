@@ -3,20 +3,18 @@ import Movie from "./Movie";
 import { AppContext } from "../../Context/SearchContext";
 import './Movies.css';
 
-const API_KEY = "67353b44";
-
 export default function Movies() {
   const [movies, setMovies] = useState([]);
   const [series, setSeries] = useState([]); // Default series to "which you want to show in the main page"
   const [currentPage, setCurrentPage] = useState(0);
   const moviesPerPage = 5; // Number of movies per page
-  const { state, setState, isLoading, setIsLoading } = useContext(AppContext);
+  // const { state, setState, isLoading, setIsLoading } = useContext(AppContext);
 
   useEffect(() => {
     setSeries(state.length > 0 ? state : ['Stree 2']); // Use default if state is empty
     const promises = series.map(s => {
       setIsLoading(true);
-      return fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${s}`)
+      return fetch(`do it your self`)
         .then(res => {
           setIsLoading(false);
           return res.json();
