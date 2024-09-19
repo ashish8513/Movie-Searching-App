@@ -6,6 +6,7 @@ Search for movies by title
 View movie posters and details
 Responsive design for all devices
 
+![First loading Page](https://github.com/ashish8513/Movie-Searching-App/blob/main/movies.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
